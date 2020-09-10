@@ -1,3 +1,8 @@
+# App specific
+
+error.log
+daemon.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
