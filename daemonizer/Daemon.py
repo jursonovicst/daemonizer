@@ -131,7 +131,7 @@ class Daemon:
 
     def create(self):
         # start process
-        self._process = Popen([self._executable] + self._args, stdout=PIPE, stderr=PIPE, text=True)
+        self._process = Popen([self._executable] + self._args, stdout=PIPE, stderr=PIPE, universal_newlines=True)
         self.info(f"created (PID: {self._process.pid})", self.id)
 
         # register
